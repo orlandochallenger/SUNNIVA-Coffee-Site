@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster|Roboto');
+
+/* CSS Reset */
+*{
+  margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+/* Hello World*/
+.title {color:white;
+}
+
+/* Body */
+
+body {margin: 0;
+      background-color: white; 
+      font-family: Roboto, cursive;
+      
+     }
+
+/*Unordered List Tag*/
+ul{
+    list-style: none;  
+}
+
+/* Anchtor Tags */
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a:visited a:link {
+    text-decoration: none; 
+    color: black;
+}
+
+a:hover {
+         text-decoration: underline; 
+         color: purple;
+}
+
+a.active {
+          color: rgb(1, 2, 2); 
+          text-decoration: none;
+}
+
+/*Header Tags 1 & 2 */
+
+h1{
+    font-size: 60px;}
+
+h2{
+    font-size: 30;
+    margin: 10px 0;
+    text-align: center;
+}
+
+/*Paragraph Tag*/
+p{
+    
+    font-size: 16px;
+    margin: 10px 0;
+    display: block;
+    line-height: inherit;
+    text-align: left;
+}
+
+p a:link {
+          font-weight: bold; 
+          color: firebrick;
+}
+
+p a:visited {
+              color: firebrick;
+}
+
+/* Header Tag */
+header{
+        background-color: white;
+        text-align: center;
+        padding: 20px 0;
+}
+
+#logo {color: black;
+       margin-bottom: 5px;
+       font-family: Roboto, cursive;
+}
+
+/*Nav Tag*/
+nav ul li{
+          margin: 0 10px;
+          display: inline-block;
+}
+
+/*Main Tag*/
+main{
+     margin: 20px 0; 
+     padding: 0 20px;
+}
+
+#img{
+     border-radius: 5%;
+     border: 2px solid black;
+     width: 50vw;
+     height: 50vh;
+     position: relative;
+     clear: both;
+}
+
+.video-container{
+  margin: 20px;  
+}
+
+ /* Section Content*/
+.content { text-align: center; 
+           margin: 20px 100px;
+           display: inline-block;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/*Footer Tag */
+footer{
+        background-color: black; padding: 10px 0;
+        text-align: center;
+}
+
+footer ul li {margin: 0 10px;
+              display: inline-block;
+}
+
+footer p {color: #fff; 
+          margin: 0; 
+          text-align: center;}
+footer p span {color: white;}
+
+.social-media {margin-bottom: 5px;}
+.social-media img { width: 32px; height: 32px;}
+
+ /* Show which page we are on */
+.active { font-weight: bold; text-decoration: underline; }
+
+/* Contact Page */
+
+.field {
+  font-size: 15px;
+  display: block;
+  padding: 5px 10px;
+  margin: 10px auto;
+  border: 1px solid grey;
+  border-radius: 3px;
+  width: 220px;
+}
+
+.button {
+  font-size: 14px;
+  border: 1px solid grey;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+
+
+
+/*Tablet that are 768px and under*/
+@media screen and (max-width: 768px) { 
+     .container { width: 95%; 
+    }
+  
+}
+/*Phone that are 480px and under*/
+@media screen and (max-width: 480px) { 
+       .container { width: 95%; }
+    
+       .content { text-align: center; 
+                  margin: 20px 10px; 
+    }
+    #logo{ color: #D76300; }
+}
